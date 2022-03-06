@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from "./components/Header.js";
 import DogImages from "./components/DogImages.js"
+import AddDog from "./components/AddDog.js"
 
 import './App.css';
 
@@ -10,7 +11,7 @@ function App() {
       <Header/>
       <h2 className='subtitle'>Um site para quem ama cachorrinhos!</h2>
       <DogImages/>
-      <h2 className='subtitle'>Fim da Pag</h2>
+      <AddDog></AddDog>
     </div>
   );
 }

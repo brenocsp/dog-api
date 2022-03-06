@@ -33,11 +33,11 @@
 button {
   background-color: transparent;
   border-color: transparent;
-  align-content: center;
+}
+
+.addImg {
   display: flex;
   justify-content: center;
-  align-items: center;
-
 }
 
 .mostrar-mais {
@@ -47,4 +47,20 @@ button {
   color: #ED254E;
   font-family: 'Love Ya Like A Sister', cursive;
   font-weight: 400;
+}
+
+.images{
+  display: flexbox;
+  justify-content: space-around;
+  text-align: center;
+  margin-right: 32px;
+  margin-left: 32px;
+}
+
+.resultado{
+  border-radius: 20px;
+  margin: 20px;
+  width: 256px;
+  height: 256px;
+  /* object-fit: cover; */
 }
