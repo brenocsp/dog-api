@@ -27,9 +27,10 @@ function DogImages() {
     resultado.appendChild(img);
   }
 
-  return ( 
+  return (
     <div>
-      <div className='images'>{dogs.map(dog => <img className="resultado" key={dog.id} alt='oi' src={dog.url}></img>)}</div> 
+      <div className='images'>{dogs.slice(0,4).map(dog => <img className="resultado" key={dog.id} alt='foto de um cachorrinho' src={dog.url}></img>)}</div>
+      <div className='images'>{dogs.slice(4,9).map(dog => <img className="resultado" key={dog.id} alt='foto de um cachorrinho' src={dog.url}></img>)}</div> 
     </div>
   );
 }

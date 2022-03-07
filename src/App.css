@@ -2,20 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
 .App-header {
-  background-color: #777DA7;;
+  background-color: #777DA7;
   align-items: center;
   display: flex;
   justify-content: space-between;
 }
 
 .paw-icon {
-  width: 7vh;
+  width: 10vh;
   height: auto;
   padding: 2vh;
 }
 
 .title {
-  font-size: 22px;
+  font-size: 44px;
   font-family: 'Libre Baskerville', serif;
   color: #F4FFFD;
   font-weight: 400;
@@ -24,7 +24,7 @@
 .subtitle {
   text-align: center;
   padding: 2vh;
-  font-size: 16px;
+  font-size: 28px;
   color: #211103;
   font-family: 'Love Ya Like A Sister', cursive;
   font-weight: 400;
@@ -38,15 +38,16 @@ button {
 .addImg {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .mostrar-mais {
   text-align: center;
-  padding: 2vh;
-  font-size: 15px;
+  font-size: 24px;
   color: #ED254E;
   font-family: 'Love Ya Like A Sister', cursive;
   font-weight: 400;
+  margin: 5px;
 }
 
 .images{
@@ -59,8 +60,11 @@ button {
 
 .resultado{
   border-radius: 20px;
-  margin: 20px;
-  width: 256px;
-  height: 256px;
-  /* object-fit: cover; */
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  margin-top: 0px;
+  width: 40vh;
+  height: 40vh;
+  object-fit: cover;
 }

@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import axios from 'axios';
 
-function AddDog() {
+function AddDogs() {
 
     const [dogs, setDogs] = useState([]);
     const [click, setClick] = useState(0);
@@ -36,15 +36,18 @@ function AddDog() {
   
     return ( 
       <div>
-        <div className='images'>{dogs.map(dog => <img className="resultado" key={dog.id} alt='oi' src={dog.url}></img>)}</div> 
-        <p className='mostrar-mais'>Mostrar Mais</p>
+        <div>
+          <div className='images'>{dogs.slice(0,4).map(dog => <img className="resultado" key={dog.id} alt='foto de um cachorrinho' src={dog.url}></img>)}</div>
+          <div className='images'>{dogs.slice(4,9).map(dog => <img className="resultado" key={dog.id} alt='foto de um cachorrinho' src={dog.url}></img>)}</div> 
+        </div>
+        <p className='mostrar-mais'>Mostrar Mais!</p>
         <div className='addImg'>
-            <button onClick={()=>setClick(prevClick => prevClick+1)}>
-                <img src="assets/arrowDown.png" alt="Botão para mostrar mais fotos de cachorros" />
-            </button>
+          <button onClick={()=>setClick(prevClick => prevClick+1)}>
+            <img src="assets/arrowDown.png" alt="Botão para mostrar mais fotos de cachorros"/>
+          </button>
         </div>
       </div>
     );
   }
   
-  export default AddDog;
+  export default AddDogs;
