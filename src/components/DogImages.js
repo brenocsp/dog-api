@@ -17,15 +17,6 @@ function DogImages() {
         .catch(err=>console.log(err));
   }, []);
 
-  // function carregaElementosNaPagina(dogData) {
-  //   const img = document.createElement("img");
-  //   img.src = dogData.url;
-  //   document.body.appendChild(img);
-    
-  //   const resultado = document.querySelector('.resultado');
-  //   resultado.appendChild(img);
-  // }
-
   return (
     <div>
       <div className='images'>{dogs.map(dog => <img className="resultado" key={dog.id} alt='foto de um cachorrinho' src={dog.url}></img>)}</div>
