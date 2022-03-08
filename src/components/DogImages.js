@@ -13,24 +13,22 @@ function DogImages() {
         }
       }).then(resposta => {
         setDogs(resposta.data)
-        carregaElementosNaPagina(resposta.data)
       })
         .catch(err=>console.log(err));
   }, []);
 
-  function carregaElementosNaPagina(dogData) {
-    const img = document.createElement("img");
-    img.src = dogData.url;
-    document.body.appendChild(img);
+  // function carregaElementosNaPagina(dogData) {
+  //   const img = document.createElement("img");
+  //   img.src = dogData.url;
+  //   document.body.appendChild(img);
     
-    const resultado = document.querySelector('.resultado');
-    resultado.appendChild(img);
-  }
+  //   const resultado = document.querySelector('.resultado');
+  //   resultado.appendChild(img);
+  // }
 
   return (
     <div>
-      <div className='images'>{dogs.slice(0,4).map(dog => <img className="resultado" key={dog.id} alt='foto de um cachorrinho' src={dog.url}></img>)}</div>
-      <div className='images'>{dogs.slice(4,9).map(dog => <img className="resultado" key={dog.id} alt='foto de um cachorrinho' src={dog.url}></img>)}</div> 
+      <div className='images'>{dogs.map(dog => <img className="resultado" key={dog.id} alt='foto de um cachorrinho' src={dog.url}></img>)}</div>
     </div>
   );
 }
